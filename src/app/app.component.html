@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="container" style="margin-top: 60px">
+  <div class="row">
+    <div class="col-12 col-lg-5 mt-2">
+      <!-- Upcoming / Next launch in data -->
+      <app-img-mask-with-text [imgSrc]="dummyLaunchImg">
+        <h5 class="h5 orange-underline highlight-font">Upcoming launch</h5>
+        <h6 class="fw-bold">Falcon 9 Block 5 | Starlink Group 4-20 & Varuna</h6>
+        <h6>
+          <i class="fas fa-calendar-day"></i> &nbsp; Sep 01 2022, 19:00:00
+        </h6>
+      </app-img-mask-with-text>
+    </div>
+
+    <div class="col-12 col-lg-7 mt-2">
+      <!-- Today in history -->
+      <div class="row g-1">
+        <h5 class="h5 highlight-font">Today in history</h5>
+        <div class="col-6">
+          <div class="card bg-dark">
+            <img
+              [src]="dummyLaunchImg"
+              class="card-img-top"
+              alt="Fissure in Sandstone"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+      </div>
+    </div>
+  </div>
+</div>

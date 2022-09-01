@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+// This fontface is mainly used for Website Name
+@font-face {
+  font-family: "Salvar";
+  src: local("Salvar"),
+    url(./assets/fonts/SalvarRegular-gxwoP.ttf) format("truetype");
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.highlight-font {
+  font-family: "Playfair Display", serif;
+}
+
+.orange-underline {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: darkorange;
+}
