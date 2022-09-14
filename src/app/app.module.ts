@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { ImgMaskWithTextComponent } from './img-mask-with-text/img-mask-with-text.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,7 @@ import { ImgMaskWithTextComponent } from './img-mask-with-text/img-mask-with-tex
     MdbScrollspyModule,
     MdbTabsModule,
     MdbTooltipModule,
-    MdbValidationModule,
+    MdbValidationModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]

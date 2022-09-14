@@ -14,17 +14,28 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(49, 49, 49);
+  font-family: "Rubik", sans-serif;
   color: white;
-  font-family: "Lato", sans-serif;
 }
 
-.highlight-font {
-  font-family: "Playfair Display", serif;
+a {
+  color: white;
 }
 
-.orange-underline {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: darkorange;
+.bg-gray-custom{
+  background-color: #363535;
 }
+
+// .blue-color-600 {
+//  color: #1E88E5 !important;
+// }
+
+// .blue-bg-600{
+//   background-color: #1E88E5 !important;
+// }
+
+// .navbar-light .navbar-nav .nav-link.active{
+//   color: #1E88E5 !important;
+//   font-weight: lighter;
+// }
