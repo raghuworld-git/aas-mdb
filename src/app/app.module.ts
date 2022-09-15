@@ -23,13 +23,15 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { ImgMaskWithTextComponent } from './img-mask-with-text/img-mask-with-text.component';
+import { InfoHeaderComponent } from './info-header/info-header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ImgMaskWithTextComponent
+    ImgMaskWithTextComponent,
+    InfoHeaderComponent
   ],
   imports: [
     BrowserModule,
