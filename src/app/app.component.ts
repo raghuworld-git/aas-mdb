@@ -1,4 +1,8 @@
+// Project structure to refer
+// https://github.com/ghoul007/Angular-project-structure
+
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,8 +11,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor(public _router:Router){}
+  routeToIngore:string="todayinhistory";
+
   title = 'mdb-angular-ui-kit-free';
-  dummyLaunchImg: string = "https://nyc3.digitaloceanspaces.com/spacelaunchnow-prod-east/media/launcher_images/long2520march25204_image_20190520170012.jpeg";
-  picofday: string = "https://apod.nasa.gov/apod/image/2209/SnakingFilament_Friedman_960.jpg";
-  astronaut="https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/astronaut_images/albert2520sacco_image_20190211162452.jpeg";
+
 }

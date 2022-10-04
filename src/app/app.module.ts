@@ -20,22 +20,28 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 
+
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
-import { ImgMaskWithTextComponent } from './img-mask-with-text/img-mask-with-text.component';
-import { InfoHeaderComponent } from './info-header/info-header.component';
+import { LayoutModule } from './layout/layout.module';
+import { AppRoutingModule } from './app-routing.module';
+import { CoreModule } from '@core/core.module';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    ImgMaskWithTextComponent,
-    InfoHeaderComponent
+    AppComponent
   ],
   imports: [
+    LayoutModule,
+    AppRoutingModule,
+    CoreModule,
+
     BrowserModule,
     BrowserAnimationsModule,
+
     MdbAccordionModule,
     MdbCarouselModule,
     MdbCheckboxModule,
@@ -50,7 +56,7 @@ import { InfoHeaderComponent } from './info-header/info-header.component';
     MdbScrollspyModule,
     MdbTabsModule,
     MdbTooltipModule,
-    MdbValidationModule,    
+    MdbValidationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

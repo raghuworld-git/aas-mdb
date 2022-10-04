@@ -1,0 +1,139 @@
+
+  <div class="row g-3">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="float-start">
+            <i class="far fa-dot-circle"></i> &nbsp;Upcoming Launch
+          </h5>
+          <a href="#" class="float-end fs-5 custom-link-hover"
+            ><i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="bg-image rounded-6 postion-relative">
+        <img
+          [src]="dummyLaunchImg"
+          class="w-100"
+          style="object-fit: cover; height: 40vh"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+          class="mask"
+          style="
+            background: linear-gradient(
+              to bottom,
+              hsla(0, 0%, 0%, 0) 50%,
+              hsla(0, 0%, 0%, 0.5)
+            );
+          "
+        >
+          <div
+            class="
+              bottom-0
+              text-white
+              me-3
+              d-flex
+              align-items-end
+              h-100
+              justify-content-end
+            "
+          >
+            <div class="text-end">
+              <p class="badge bg-danger m-0">To Be Confirmed (TBC)</p>
+              <p class="fs-5 fw-bold m-0">
+                Falcon 9 Block 5 | Starlink Group 4-2 & BlueWalker 3
+              </p>
+              <p class="fs-5">
+                <i class="fas fa-calendar-day"></i> &nbsp; Sep 11 2022, 06:40:00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="float-start">
+            <i class="fas fa-image"></i> &nbsp;Picture of the day
+          </h5>
+          <a [routerLink]="['/','picoftheday']" class="float-end fs-5 custom-link-hover"
+            ><i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="bg-image rounded-6">
+        <img
+          [src]="picofday"
+          class="w-100"
+          style="object-fit: cover; height: 40vh"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+          class="mask"
+          style="
+            background: linear-gradient(
+              to bottom,
+              hsla(0, 0%, 0%, 0) 50%,
+              hsla(0, 0%, 0%, 0.5)
+            );
+          "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              me-3
+              text-white
+              align-items-end
+              h-100
+              justify-content-end
+            "
+          >
+            <div>
+              <p class="fs-5 fw-bold">
+                Star Forming Region NGC 3582 without Stars
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row g-2 mt-1">
+    <div class="col-12 col-lg-5">
+      <div class="card bg-gray-custom">
+        <div
+          class="
+            card-body
+            shadow-5
+            d-flex
+            flex-row
+            align-items-center
+            justify-content-center
+          "
+        >
+          <img src="/assets/images/mars.png" style="height: 20vh" />
+          <span
+            class="
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+              ms-4
+            "
+          >
+            Explore images of
+            <h4 class="fw-bold">RED PLANET</h4>
+            <a class="stretched-link custom-link-hover" href="#"
+              ><i class="fas fa-chevron-circle-right"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-8">
+
+    </div>
+  </div>

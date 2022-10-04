@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col">
+    <h3>Picture of the day : {{ selectedDate }}</h3>
+  </div>
+</div>
+
+<div class="d-flex flex-column align-items-center mt-4">
+  <input
+    type="date"
+    [min]="minDate"
+    [max]="currentDate"
+    [value]="currentDate"
+    (change)="changekey($event)"
+  />
+  <br />
+</div>
+
+<ng-container *ngIf="podResult != null">
+  <div class="row text-center">
+    <div class="col-12">
+      <h5>
+        <u>{{ podResult?.title }}</u>
+      </h5>
+      <p class="has-dropcap">{{ podResult?.explanation }}</p>
+    </div>
+    <div class="col-12" *ngIf="podResult?.media_type != 'video';else youtubeCompRef">
+
+      <a
+        class="btn btn-small btn-primary"
+        target="_blank"
+        [href]="podResult?.hdurl"
+        >For <span class="fw-bolder">HD</span> Image click me</a
+      ><br /><br />
+      <figure class="figure">
+        <img
+          [src]="podResult?.url"
+          class="figure-img img-fluid rounded shadow-3 mb-3"
+          style="
+            max-height: 100vh !important;
+            object-fit: cover;
+            object-position: center;
+          "
+          [alt]="podResult?.title"
+        />
+        <figcaption class="figure-caption text-center">
+          <i class="far fa-copyright" *ngIf="podResult?.copyright"></i>
+          {{ podResult?.copyright ? podResult?.copyright : "" }}
+        </figcaption>
+      </figure>
+    </div>
+    <ng-template #youtubeCompRef>
+      <div class="col-12">
+        <app-youtube-frame [youtubeURL]="podResult?.url"></app-youtube-frame>
+     </div>
+    </ng-template>
+  </div>
+</ng-container>

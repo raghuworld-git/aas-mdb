@@ -9,7 +9,9 @@ export class InfoHeaderComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
+
   }
 
 }
