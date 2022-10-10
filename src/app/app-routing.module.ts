@@ -13,6 +13,10 @@ const routes: Routes = [
       .then(m => m.DashboardModule)
   },
   {
+    path: 'launches', loadChildren: () => import("./features/launches/launches.module")
+      .then(m => m.LaunchesModule)
+  },
+  {
     path: '', redirectTo: '/dashboard', pathMatch: 'full'
   },
 ];
